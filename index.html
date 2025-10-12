@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>CyberPortfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="top">
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
+    <a href="#home" class="logo">CyberDev</a>
+
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skill</a></li>
+      <li><a href="#zertifizierung" data-i18n="nav.certs">Zertifizierung</a></li>
+      <li><a href="#projekts" data-i18n="nav.projects">projects</a></li>
+      <li><a href="#Berufserfahrung" data-i18n="nav.Berufserfahrung" >Berufserfahrung</a></li>
+      <li><a href="#Ausbildung" data-i18n="nav.ausbildung">Ausbildung</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+
+    <!-- Lang switch -->
+    <div class="lang-switch">
+      <button id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+        <span id="langCurrent">DE</span> <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <ul id="langMenu" class="lang-menu" role="listbox" aria-label="Language">
+        <li role="option" data-lang="de">Deutsch</li>
+        <li role="option" data-lang="en">English</li>
+      </ul>
+    </div>
+
+    <!-- Theme -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Tekoulegha Dongmo Rossignol Blondel</h1>
+      <h2 class="highlight" data-i18n="hero.subtitle">
+        Auf dem Weg zum Full-Stack Developer & Cybersecurity-Engineer
+      </h2>
+      <strong>
+        <p data-i18n="hero.paragraph">
+          Ich bin ein engagierter Full-Stack-Entwickler mit einer starken Leidenschaft für Cybersicherheit. Mein Ziel
+          ist es, moderne, performante und sichere Webanwendungen zu entwickeln, die höchste Qualitätsstandards
+          erfüllen. Mit analytischem Denken, technischer Neugier und einem ausgeprägten Verantwortungsbewusstsein
+          arbeite ich daran, innovative digitale Lösungen zu schaffen, die sowohl funktional als auch sicher sind.
+        </p>
+        <p class="highlight" data-i18n="hero.specializing">
+          Specializing in modern web development and Cyber systems
+        </p>
+      </strong>
+    </div>
+    <div class="hero-image">
+      <img src="foto.png" alt="Profile" class="profile-img">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2 data-i18n="skills.title">Technical Expertise</h2>
+    <div class="skills-grid">
+
+      <!-- FRONTEND -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 0)">
+        <i class="fas fa-code card-icon"></i>
+        <h3 data-i18n="certs.title">Frontend Development</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-react-original colored"></i><span>React</span></li>
+          <li><i class="devicon-vuejs-plain colored"></i><span>Vue</span></li>
+          <li><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+          <li><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+          <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+          <li><i class="devicon-angularjs-plain colored"></i><span>Angular</span></li>
+        </ul>
+      </div>
+
+      <!-- BACKEND -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 1)">
+        <i class="fa-solid fa-server card-icon"></i>
+        <h3>Backend Development</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+          <li><i class="devicon-python-plain colored"></i><span>Python</span></li>
+          <li><i class="devicon-java-plain colored"></i><span>Java</span></li>
+          <li><i class="devicon-php-plain colored"></i><span>PHP</span></li>
+        </ul>
+      </div>
+
+      <!-- UI/UX -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 2)">
+        <i class="fa-solid fa-paintbrush card-icon"></i>
+        <h3>UI/UX Design</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-figma-plain colored"></i><span>Figma</span></li>
+          <li><i class="devicon-xd-plain colored"></i><span>Adobe XD</span></li>
+          <li><i class="fa-solid fa-user-check"></i><span>User Testing</span></li>
+        </ul>
+      </div>
+
+      <!-- DevOps -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 1)">
+        <i class="fa-brands fa-dev card-icon"></i>
+        <h3>DevOps</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-docker-plain colored"></i><span>Docker</span></li>
+          <li><i class="fa-solid fa-code-branch"></i><span>CI/CD Pipelines</span></li>
+        </ul>
+      </div>
+
+      <!-- Collaboration -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 1)">
+        <i class="fa-brands fa-dev card-icon"></i>
+        <h3>Collaboration & Version Control</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+          <li><i class="devicon-github-original colored"></i><span>GitHub</span></li>
+          <li><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></li>
+          <li><i class="fa-brands fa-jira"></i><span>Jira</span></li>
+        </ul>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 3)">
+        <i class="fa-solid fa-database card-icon"></i>
+        <h3>Database</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
+          <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
+          <li><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></li>
+          <li><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></li>
+        </ul>
+      </div>
+
+      <!-- CMS & Web Tools -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 4)">
+        <i class="fa-solid fa-globe card-icon"></i>
+        <h3>Content Management & Web Tools</h3>
+        <ul class="skill-list">
+          <li><i class="fa-brands fa-wordpress" style="color:#21759B;"></i><span>WordPress</span></li>
+          <li><i class="fa-brands fa-joomla" style="color:#5091CD;"></i><span>Joomla</span></li>
+          <li><i class="fa-brands fa-drupal" style="color:#0077C0;"></i><span>Drupal</span></li>
+          <li><i class="fa-brands fa-wix" style="color:#ff4088;"></i><span>Wix</span></li>
+        </ul>
+      </div>
+
+      <!-- Office & Productivity -->
+      <div class="skill-card" style="animation-delay: calc(var(--delay-step) * 5)">
+        <i class="fa-solid fa-file-lines card-icon"></i>
+        <h3>Office & Productivity Tools</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-file-word" style="color:#2B579A;"></i><span>Microsoft Word</span></li>
+          <li><i class="fa-solid fa-file-excel" style="color:#217346;"></i><span>Microsoft Excel</span></li>
+          <li><i class="fa-solid fa-file-powerpoint" style="color:#D24726;"></i><span>PowerPoint</span></li>
+          <li><i class="fa-solid fa-envelope" style="color:#0072C6;"></i><span>Outlook</span></li>
+          <li><i class="fa-brands fa-google" style="color:#4285F4;"></i><span>Google Docs</span></li>
+          <li><i class="fa-brands fa-google-drive" style="color:#34A853;"></i><span>Google Sheets</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bande défilante -->
+  <section>
+    <div class="tools-marquee" aria-label="Outils & technologies défilants">
+      <div class="tools-marquee__track">
+        <!-- Séquence A -->
+        <div class="tools-marquee__item"><i class="fa-brands fa-wordpress"
+            style="color:#21759B;"></i><span>WordPress</span></div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-joomla" style="color:#5091CD;"></i><span>Joomla</span>
+        </div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-drupal" style="color:#0077C0;"></i><span>Drupal</span>
+        </div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-wix" style="color:#ff4088;"></i><span>Wix</span></div>
+        <div class="tools-marquee__item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div class="tools-marquee__item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="tools-marquee__item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div class="tools-marquee__item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div class="tools-marquee__item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="tools-marquee__item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+        <div class="tools-marquee__item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+        <div class="tools-marquee__item"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
+        <div class="tools-marquee__item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="tools-marquee__item"><i class="fa-solid fa-code-branch"></i><span>CI/CD Pipelines</span></div>
+        <div class="tools-marquee__item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+        <div class="tools-marquee__item"><i class="devicon-xd-plain colored"></i><span>Adobe XD</span></div>
+        <div class="tools-marquee__item"><i class="fa-solid fa-user-check"></i><span>User Testing</span></div>
+        <div class="tools-marquee__item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="tools-marquee__item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="tools-marquee__item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="tools-marquee__item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="tools-marquee__item"><i class="devicon-react-original colored"></i><span>React</span></div>
+        <div class="tools-marquee__item"><i class="devicon-vuejs-plain colored"></i><span>Vue</span></div>
+        <div class="tools-marquee__item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+        <div class="tools-marquee__item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="tools-marquee__item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="tools-marquee__item"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+
+        <!-- Séquence B (copie) -->
+        <div class="tools-marquee__item"><i class="fa-brands fa-wordpress"
+            style="color:#21759B;"></i><span>WordPress</span></div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-joomla" style="color:#5091CD;"></i><span>Joomla</span>
+        </div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-drupal" style="color:#0077C0;"></i><span>Drupal</span>
+        </div>
+        <div class="tools-marquee__item"><i class="fa-brands fa-wix" style="color:#ff4088;"></i><span>Wix</span></div>
+        <div class="tools-marquee__item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div class="tools-marquee__item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="tools-marquee__item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div class="tools-marquee__item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div class="tools-marquee__item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="tools-marquee__item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+        <div class="tools-marquee__item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+        <div class="tools-marquee__item"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
+        <div class="tools-marquee__item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="tools-marquee__item"><i class="fa-solid fa-code-branch"></i><span>CI/CD Pipelines</span></div>
+        <div class="tools-marquee__item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+        <div class="tools-marquee__item"><i class="devicon-xd-plain colored"></i><span>Adobe XD</span></div>
+        <div class="tools-marquee__item"><i class="fa-solid fa-user-check"></i><span>User Testing</span></div>
+        <div class="tools-marquee__item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="tools-marquee__item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="tools-marquee__item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="tools-marquee__item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="tools-marquee__item"><i class="devicon-react-original colored"></i><span>React</span></div>
+        <div class="tools-marquee__item"><i class="devicon-vuejs-plain colored"></i><span>Vue</span></div>
+        <div class="tools-marquee__item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+        <div class="tools-marquee__item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+        <div class="tools-marquee__item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="tools-marquee__item"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zertifizierung -->
+  <section id="zertifizierung" class="certs">
+    <div class="certs-header">
+      <h2 data-i18n="certs.title">Zertifizierung</h2>
+      <p class="certs-sub" data-i18n="certs.subtitle">Eine Auswahl meiner Zertifikate & Auszeichnungen</p>
+
+      <div class="cert-filters" role="tablist" aria-label="Filter">
+        <button class="cert-filter is-active" data-group="all" data-i18n="certs.filter.all">Alle</button>
+        <button class="cert-filter" data-group="web" data-i18n="certs.filter.web">Web</button>
+        <button class="cert-filter" data-group="prog" data-i18n="certs.filter.prog">Programmierung</button>
+        <button class="cert-filter" data-group="linux" data-i18n="certs.filter.linux">Linux & Netzwerk</button>
+        <button class="cert-filter" data-group="office" data-i18n="certs.filter.office">Office</button>
+      </div>
+    </div>
+
+    <div class="cert-groups">
+      <!-- Web -->
+      <section class="cert-group" data-group="web" aria-labelledby="cg-web">
+        <h3 id="cg-web" class="cert-group-title">Web</h3>
+        <div class="cert-grid">
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/angular.jpg" aria-label="Bild vergrößern">
+              <img src="foto/angular.jpg" alt="Angular Grundkurs 1: Das Ökosystem (2023)" loading="lazy">
+            </button>
+            <figcaption><strong>Angular</strong><span>2023 • LinkedIn Learning</span></figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Webtechniken  HTML.jpg" aria-label="Bild vergrößern">
+              <img src="foto/Webtechniken  HTML.jpg" alt="Webtechniken lernen 1: HTML (2023)" loading="lazy">
+            </button>
+            <figcaption><strong>Webtechniken : HTML</strong><span>2023 • LinkedIn Learning</span></figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Webtechniken CSS.jpg" aria-label="Bild vergrößern">
+              <img src="foto/Webtechniken CSS.jpg" alt="Webtechniken lernen 2: CSS-Grundlagen (2024)" loading="lazy">
+            </button>
+            <figcaption><strong>Webtechniken lernen 2: CSS-Grundlagen</strong><span>2024 • LinkedIn Learning</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Programmierung -->
+      <section class="cert-group" data-group="prog" aria-labelledby="cg-prog">
+        <h3 id="cg-prog" class="cert-group-title">Programmierung</h3>
+        <div class="cert-grid">
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Java Grundkurs 1 Sprachkonzepte und Programmiergrundlagen.jpg"
+              aria-label="Bild vergrößern">
+              <img src="foto/Java Grundkurs 1 Sprachkonzepte und Programmiergrundlagen.jpg"
+                alt="Java Grundkurs 1 (2024)" loading="lazy">
+            </button>
+            <figcaption><strong>Java Grundkurs 1</strong><span>2024 • LinkedIn Learning</span></figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Java.jpg" aria-label="Bild vergrößern">
+              <img src="foto/Java.jpg" alt="Java lernen (2024)" loading="lazy">
+            </button>
+            <figcaption><strong>Java</strong><span>2024 • LinkedIn Learning</span></figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/PHP Grundkurs 2 Praktische Programmierung_.jpg"
+              aria-label="Bild vergrößern">
+              <img src="foto/PHP Grundkurs 2 Praktische Programmierung_.jpg" alt="PHP Grundkurs 2 (2024)"
+                loading="lazy">
+            </button>
+            <figcaption><strong>PHP Grundkurs 2</strong><span>2024 • LinkedIn Learning</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Linux & Netzwerk -->
+      <section class="cert-group" data-group="linux" aria-labelledby="cg-linux">
+        <h3 id="cg-linux" class="cert-group-title">Linux & Netzwerk</h3>
+        <div class="cert-grid">
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Linux.jpg" aria-label="Bild vergrößern">
+              <img src="foto/Linux.jpg" alt="Einführung und Einstieg in Linux (2025)" loading="lazy">
+            </button>
+            <figcaption><strong>Einführung und Einstieg in Linux</strong><span>2025 • LinkedIn Learning</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Netzwerkgrundlagen 3 Infrastruktur planen und installieren.jpg"
+              aria-label="Bild vergrößern">
+              <img src="foto/Netzwerkgrundlagen 3 Infrastruktur planen und installieren.jpg"
+                alt="Infrastruktur planen und installieren (2025)" loading="lazy">
+            </button>
+            <figcaption><strong>Infrastruktur planen und installieren</strong><span>2025 • LinkedIn Learning</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Netzwerkgrundlagen 4 Router Server und Clients konfigurieren.jpg"
+              aria-label="Bild vergrößern">
+              <img src="foto/Netzwerkgrundlagen 4 Router Server und Clients konfigurieren.jpg"
+                alt="Router/Server/Clients konfigurieren (2025)" loading="lazy">
+            </button>
+            <figcaption><strong>Router/Server/Clients konfigurieren</strong><span>2025 • LinkedIn Learning</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Office -->
+      <section class="cert-group" data-group="office" aria-labelledby="cg-office">
+        <h3 id="cg-office" class="cert-group-title">Office</h3>
+        <div class="cert-grid">
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Word 2019 Grundkurs.jpg" aria-label="Bild vergrößern">
+              <img src="foto/Word 2019 Grundkurs.jpg" alt="Word 2019 Grundkurs (2022)" loading="lazy">
+            </button>
+            <figcaption><strong>Word 2019 Grundkurs</strong><span>2022 • LinkedIn Learning</span></figcaption>
+          </figure>
+
+          <figure class="cert-card">
+            <button class="cert-zoom" data-full="foto/Word Grundkurs Office 365Microsoft 365.jpg"
+              aria-label="Bild vergrößern">
+              <img src="foto/Word Grundkurs Office 365Microsoft 365.jpg"
+                alt="Word Grundkurs (Office 365/Microsoft 365) (2022)" loading="lazy">
+            </button>
+            <figcaption><strong>Word Grundkurs (Office 365/Microsoft 365)</strong><span>2022 • LinkedIn Learning</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Berufserfahrung -->
+  <section id="Berufserfahrung" class="exp-creative">
+    <h2><i class="fa-solid fa-briefcase"></i> Berufserfahrung</h2>
+
+    <ol class="exp-timeline">
+      <li class="exp-item">
+        <div class="exp-node" aria-hidden="true"></div>
+        <div class="exp-card">
+          <div class="exp-meta">03/2025 – heute • Remote</div>
+          <h3>Werkstudent (Homeoffice)</h3>
+          <h4>SYN IT Solutions GmbH</h4>
+          <p>Unterstützung im Bereich Web & Content.</p>
+          <ul class="exp-list">
+            <li>Aufbau und Pflege einer Firmen-Website</li>
+            <li>Recherche & Erstellung digitaler Inhalte</li>
+            <li>Unterstützung beim Verfassen von Texten</li>
+            <li>Mithilfe bei der Kundenakquise</li>
+          </ul>
+          <div class="exp-tags"><span>CMS</span><span>Content</span><span>SEO</span><span>WordPress</span></div>
+        </div>
+      </li>
+
+      <li class="exp-item">
+        <div class="exp-node" aria-hidden="true"></div>
+        <div class="exp-card">
+          <div class="exp-meta">02/2020 – 05/2024 • Gießen</div>
+          <h3>Werkstudent Webentwicklung</h3>
+          <h4>B&amp;R IT-Lösungen GmbH</h4>
+          <p>Entwicklung & Wartung von Websites und Webanwendungen.</p>
+          <ul class="exp-list">
+            <li>Pflege & Aktualisierung von Inhalten</li>
+            <li>Individuelle Website-Templates</li>
+            <li>Datenbank-Anbindung & Verwaltung</li>
+            <li>CI/CD-Pipelines</li>
+            <li>Backend mit PHP & Java</li>
+          </ul>
+          <div class="exp-tags"><span>PHP</span><span>Java</span><span>CI/CD</span><span>DB</span></div>
+        </div>
+      </li>
+
+      <li class="exp-item">
+        <div class="exp-node" aria-hidden="true"></div>
+        <div class="exp-card">
+          <div class="exp-meta">05/2019 – 01/2020 • Stadtallendorf</div>
+          <h3>Werkstudent</h3>
+          <h4>Fritz Winter Eisengießerei</h4>
+          <p>Unterstützende Tätigkeiten im IT-Umfeld.</p>
+          <ul class="exp-list">
+            <li>Mitwirkung an laufenden Aufgaben/Projekten</li>
+          </ul>
+          <div class="exp-tags"><span>IT-Support</span><span>Team</span></div>
+        </div>
+      </li>
+
+      <li class="exp-item">
+        <div class="exp-node" aria-hidden="true"></div>
+        <div class="exp-card">
+          <div class="exp-meta">05/2017 – 04/2018 • Frankfurt am Main</div>
+          <h3>Ferienjob – Gastronomie</h3>
+          <h4>Leitz &amp; Schwarzbauer</h4>
+          <p>Kundenservice und Unterstützung im Tagesgeschäft.</p>
+          <div class="exp-tags"><span>Service</span><span>Kommunikation</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Ausbildung -->
+  <section id="Ausbildung" class="edu-creative">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Ausbildung</h2>
+
+    <ol class="edu-timeline">
+      <li class="edu-item">
+        <div class="edu-node" aria-hidden="true"></div>
+        <div class="edu-card">
+          <div class="edu-meta">10/2021 – heute • Gießen</div>
+          <h3>Wirtschaftsinformatik & Informatik (B. Sc.)</h3>
+          <h4>Technische Hochschule Mittelhessen (THM)</h4>
+          <p>Schwerpunkte: Softwareentwicklung, Offensive Security, KI-Einführung, Web/Cloud.</p>
+          <div class="edu-tags"><span>Java</span><span>Python</span></div>
+        </div>
+      </li>
+
+      <li class="edu-item">
+        <div class="edu-node" aria-hidden="true"></div>
+        <div class="edu-card">
+          <div class="edu-meta">12/2017 • Darmstadt</div>
+          <h3>Deutsche Sprachprüfung für den Hochschulzugang (DSH)</h3>
+          <h4>Hochschule Darmstadt</h4>
+          <p>DSH – Prüfung für ausländische Studienbewerber.</p>
+          <div class="edu-tags"><span>DSH-2</span><span>Deutsch C1/C2</span></div>
+        </div>
+      </li>
+
+      <li class="edu-item">
+        <div class="edu-node" aria-hidden="true"></div>
+        <div class="edu-card">
+          <div class="edu-meta">2014 • Jaunde</div>
+          <h3>Abitur</h3>
+          <h4>Gymnasium an der Collège Privé Les Lilas</h4>
+          <p>Allgemeine Hochschulreife.</p>
+          <div class="edu-tags"><span>Mathe</span><span>Informatik</span><span>Physik</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Lightbox (unique) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Bildanzeige">
+    <button class="lightbox-close" aria-label="Schließen (Esc)"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" alt="">
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+    <!-- Projekt -->
+  <section id="projekts" style="padding:4rem 5%; background:var(--darker-bg);">
+    <h2>Projekt</h2>
+    <p>....IN.....WARTUNG</p>
+
+    <!-- Filtres (optionnel; tu peux supprimer si tu n'en veux pas) -->
+  <div id="proj-filters" class="proj-filters" aria-label="Filter"></div>
+
+  <!-- Grille -->
+  <div id="proj-grid" class="proj-grid" aria-live="polite"></div>
+
+  <!-- Modale de détails -->
+  <dialog id="proj-modal">
+    <article class="proj-modal__content">
+      <button id="proj-close" class="proj-close" aria-label="Schließen">✕</button>
+      <img id="proj-hero" class="proj-hero" alt="">
+      <h3 id="proj-title"></h3>
+      <p id="proj-meta" class="proj-meta"></p>
+      <div id="proj-tech" class="proj-chips"></div>
+      <p id="proj-desc"></p>
+      <div class="proj-actions">
+        <a id="proj-live" class="proj-btn primary" target="_blank" rel="noopener">Live-Demo(...in bearbeitung)</a>
+        <a id="proj-code" class="proj-btn" target="_blank" rel="noopener">Quellcode</a>
+      </div>
+      <div id="proj-gallery" class="proj-gallery"></div>
+    </article>
+  </dialog>
+</section>
+  <!-- Contact (placeholder for anchor) -->
+  <section id="contact" style="padding:4rem 5%; background:var(--darker-bg);">
+    <h2>Kontakt</h2>
+    <p>...IN....WARTUNG</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tekoulegha Dongmo Rossignol Blondel. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span>
+    </p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

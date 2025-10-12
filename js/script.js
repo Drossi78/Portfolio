@@ -24,8 +24,8 @@ const PROJECTS = [
     tech: ["JavaScript","HTML5","CSS"],
     image: "foto/portfolio.png",
     gallery: ["foto/portfolio.png"],
-    live: "https://exemple.com/3d",
-    code: "https://github.com/tonuser/portfolio-3d",
+    live: "https://drossi78.github.io/Portfolio/",
+    code: "https://github.com/Drossi78/Portfolio.git",
     year: 2025
   },
   {
@@ -37,7 +37,7 @@ const PROJECTS = [
     image: "foto/kino.png",
     gallery: ["foto/login.png","foto/Register.png"],
     live: null,
-    code: "https://github.com/Drossi78/kino_buchung.git",
+    code: "https://github.com/Drossi78/kino_buchung-master",
     year: 2023
   },
   {

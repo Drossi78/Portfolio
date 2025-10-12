@@ -21,7 +21,7 @@ const PROJECTS = [
     tech: ["Three.js","Vite","GLTF"],
     image: "images/3d.jpg",
     gallery: ["images/3d.jpg"],
-    live: "https://exemple.com/3d",
+    live: "https://drossi78.github.io/Portfolio/",
     code: "https://github.com/tonuser/portfolio-3d",
     year: 2024
   },

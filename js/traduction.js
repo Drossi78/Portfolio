@@ -7,10 +7,10 @@ const DICTS = {
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
 
-    "hero.subtitle": "Auf dem Weg zum Full-Stack Developer & Cybersecurity-Engineer",
+    "hero.subtitle": "Auf dem Weg zum Software Developer & Security Engineer | OT- und Embedded-Security",
     "hero.paragraph":
-      "Ich bin ein engagierter Full-Stack-Entwickler mit einer starken Leidenschaft für Cybersicherheit. Mein Ziel ist es, moderne, performante und sichere Webanwendungen zu entwickeln, die höchste Qualitätsstandards erfüllen. Mit analytischem Denken, technischer Neugier und einem ausgeprägten Verantwortungsbewusstsein arbeite ich daran, innovative digitale Lösungen zu schaffen, die sowohl funktional als auch sicher sind.",
-    "hero.specializing": "Spezialisiert auf moderne Webentwicklung und Cybersysteme",
+      "Ich bin Software Developer mit einer starken Leidenschaft für Cybersicherheit und studiere Ingenieur-Informatik an der THM. Mein Ziel ist es, moderne, zuverlässige und sichere Systeme zu entwickeln – von Webanwendungen bis zu eingebetteten Systemen und industriellen Steuerungen. Mit analytischem Denken, technischer Neugier und einem ausgeprägten Verantwortungsbewusstsein arbeite ich daran, digitale Lösungen zu schaffen, die funktional und sicher zugleich sind.",
+    "hero.specializing": "Spezialisiert auf Webentwicklung, Embedded-Systeme und industrielle Cybersicherheit",
 
     "skills.title": "Technische Expertise",
 
@@ -32,10 +32,10 @@ const DICTS = {
     "nav.projects": "Projects",
     "nav.contact": "Contact",
 
-    "hero.subtitle": "On the path to Full-Stack Developer & Cybersecurity Engineer",
+    "hero.subtitle": "On the path to Software Developer & Security Engineer | OT and Embedded Security",
     "hero.paragraph":
-      "I am a dedicated full-stack developer with a strong passion for cybersecurity. My goal is to build modern, high-performance, and secure web applications that meet the highest quality standards. With analytical thinking, technical curiosity, and a strong sense of responsibility, I work to create innovative digital solutions that are both functional and secure.",
-    "hero.specializing": "Specializing in modern web development and cyber systems",
+      "I am a software developer with a strong passion for cybersecurity, currently studying Engineering Informatics at THM. My goal is to build modern, reliable, and secure systems, from web applications to embedded systems and industrial control systems. With analytical thinking, technical curiosity, and a strong sense of responsibility, I work to create digital solutions that are both functional and secure.",
+    "hero.specializing": "Specializing in web development, embedded systems, and industrial cybersecurity",
 
     "skills.title": "Technical Expertise",
 
